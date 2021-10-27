@@ -1,0 +1,45 @@
+body {
+    background-color:  rgb(235,97,35);
+    line-height: 1.7;
+    color:  rgb(23, 22, 21)
+
+
+}
+
+.container{
+    width: 75%;
+    margin: auto;
+}
+
+h3 {
+    color: rgb(245, 205, 8);
+  }
+nav{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+li {
+    display: inline;
+    background-color: rgb(245, 205, 8);
+    color: white;
+    padding: 16px 32px;
+    font-size: 16px;
+    opacity: 0.9;
+    transition:all 0.3s;
+    cursor: pointer;
+    position: relative;
+  }
+  li a {
+      text-decoration: none;
+      color: rgb(23, 22, 21);
+  }
+
+li:hover {
+    background-color:rgb(189, 159, 10);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    opacity: 1;
+
+}
