@@ -17,11 +17,12 @@ h3 {
 nav{
     display: inline-block;
     position: relative;
-    left: 50%;
+    left: 10%;
     transform: translateX(-50%);
 }
 
 li {
+    border: black solid 2px;
     display: inline;
     background-color: rgb(245, 205, 8);
     color: white;
@@ -42,4 +43,123 @@ li:hover {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     opacity: 1;
 
+}
+
+
+.main{
+    text-align: center;
+}
+
+
+
+.main-gallery{
+    position: relative;
+}
+
+.gallery_photo{
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+    outline-offset: 1.5rem;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.gallery_photo-1{
+    left: 1rem;
+    top: 2rem;
+    width: 20%;
+}
+
+.gallery_photo-2{
+    left: 30%;
+    top: 2rem;
+    width: 20%;
+}
+
+.gallery_photo-3{
+    left: 20rem;
+    top: 6rem;
+    width: 20%;
+}
+
+.gallery_photo:hover{
+    outline:1.8rem solid rebeccapurple;
+    transform: scale(1.10);
+    z-index: 20;
+}
+
+.heading-solid{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: 1;
+    gap: 10px;
+}
+
+.fun{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.spooky{
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+} 
+.clown{
+    width: 100%;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    text-align: center;
+}
+
+
+
+.wrapper a{
+    text-decoration: none;
+    color: black    ;
+}
+
+.wrapper {
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    transition:all 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 5rem;
+    left: 50%;
+  }
+
+.wrapper:hover {
+    background-color:  rgb(172, 144, 6);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+
+}
+
+.footer{
+    text-align: center;
+    padding: 2rem;
+    color: black;
+    margin-right: 1rem;
+    
+    
 }
